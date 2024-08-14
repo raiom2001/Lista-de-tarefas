@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="layout.css">
+    <link rel="shortcut icon" href="lista-de-tarefas.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -20,9 +21,28 @@
             <input type="text" id="new-task" class="new-task-input" placeholder="Adicione uma nova tarefa">
             <button id="add-task">Adicionar</button>
           </section>
+
+          <section class="cronometro-container">
+            <div class="cronometro">
+                <div id="cronometro-display">00:00:00</div>
+                <div class="cronometro-controls">
+                    <button id="start-button">Iniciar</button>
+                    <button id="pause-button" disabled>Pause</button>
+                    <button id="reset-button" disabled>Reiniciar</button>
+                </div>
+            </div>
+        </section>
     </main>
     
 
     <script src="script.js"></script>
+
+
+
+    
+    
 </body>
+<footer>
+    &copy; Dev Guilherme Macena 2024
+</footer>
 </html>
