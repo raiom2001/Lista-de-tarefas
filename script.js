@@ -78,6 +78,15 @@ const startButton = document.getElementById('start-button');
 const pauseButton = document.getElementById('pause-button');
 const resetButton = document.getElementById('reset-button');
 
+
+// Recupera os dados de contagem do localStorage
+if (localStorage.getItem('segundos')) {
+  segundos = parseInt(localStorage.getItem('segundos'));
+  minutos = parseInt(localStorage.getItem('minutos'));
+  horas = parseInt(localStorage.getItem('horas'));
+  cronometroDisplay.innerText = `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+}
+
 startButton.addEventListener('click', startCronometro);
 pauseButton.addEventListener('click', pauseCronometro);
 resetButton.addEventListener('click', resetCronometro);
@@ -124,3 +133,8 @@ function updateCronometro() {
 
   cronometroDisplay.innerText = `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
 }
+
+// Armazena os dados de contagem no localStorage
+localStorage.setItem('segundos', segundos);
+localStorage.setItem('minutos', minutos);
+localStorage.setItem('horas', horas);
