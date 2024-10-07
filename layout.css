@@ -6,11 +6,12 @@ body {
   }
   
   header {
-    background-color: #292929;
+    background-color: #000000;
     color: #f1f1f1;
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #0c0c0c;
+    border-style:unset;
   }
   
   header h1 {
@@ -173,10 +174,11 @@ body {
 }
 
 .cronometro-controls button:hover {
-  background-color: #007a06;
+  background-color: #d9f101;
 }
 
 .cronometro-controls button:disabled {
   background-color: #ff0000;
   cursor: not-allowed;
 }
+
