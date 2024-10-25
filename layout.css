@@ -147,21 +147,7 @@ body {
   
   }
 
-  footer {
-    
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      border: #000000;
-      width: 100%; /* ajuste o valor de acordo com a largura desejada */
-      background-color: #e9fa4c;
-      color: #000000;
-      text-align: center;
-      border-top: 2px solid #121212;
-    
-    
-}
+  
 
 
 /* CSS (layout.css) */
